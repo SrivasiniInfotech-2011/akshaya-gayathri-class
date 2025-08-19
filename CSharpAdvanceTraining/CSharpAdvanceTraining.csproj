@@ -5,7 +5,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<StartupObject>CSharpAdvanceTraining.Functions</StartupObject>
+		<StartupObject>CSharpAdvanceTraining.BillPrinting</StartupObject>
 	</PropertyGroup>
 
 	<ItemGroup>
