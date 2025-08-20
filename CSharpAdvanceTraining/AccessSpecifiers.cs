@@ -250,185 +250,186 @@ namespace CSharpAdvanceTraining
     //        }
     //    }
     //}
-//    public class Printer
-//    {
-//        public virtual void Print()
-//        {
+    //    public class Printer
+    //    {
+    //        public virtual void Print()
+    //        {
 
-//        }
-//    }
+    //        }
+    //    }
 
-//    public class DesktopPrinter : Printer
-//    {
-//        public override void Print()
-//        {
-//            Console.WriteLine("Printing from Desktop Printer");
-//        }
-//    }
+    //    public class DesktopPrinter : Printer
+    //    {
+    //        public override void Print()
+    //        {
+    //            Console.WriteLine("Printing from Desktop Printer");
+    //        }
+    //    }
 
-//    public class XeroxPrinter : Printer
-//    {
-//        public override void Print()
-//        {
-//            Console.WriteLine("Printing from Xerox Printer");
-//        }
-//    }
-//    public class BillPrinting
-//    {
-//        private static void Main()
-//        {
-//            string printer = Console.ReadLine();
-//            switch (printer)
-//            {
-//                case "DESKTOP":
-//                    Printer DESKTOP = new DesktopPrinter();
-//                    DESKTOP.Print();
-//                    break;
-//                case "XEROX":
-//                    Printer XEROX = new XeroxPrinter();
-//                    XEROX.Print();
-//                    break;
-//                default:
-//                    Printer printer1 = new Printer();
-//                    printer1.Print();
-//                    break;
-//            }
+    //    public class XeroxPrinter : Printer
+    //    {
+    //        public override void Print()
+    //        {
+    //            Console.WriteLine("Printing from Xerox Printer");
+    //        }
+    //    }
+    //    public class BillPrinting
+    //    {
+    //        private static void Main()
+    //        {
+    //            string printer = Console.ReadLine();
+    //            switch (printer)
+    //            {
+    //                case "DESKTOP":
+    //                    Printer DESKTOP = new DesktopPrinter();
+    //                    DESKTOP.Print();
+    //                    break;
+    //                case "XEROX":
+    //                    Printer XEROX = new XeroxPrinter();
+    //                    XEROX.Print();
+    //                    break;
+    //                default:
+    //                    Printer printer1 = new Printer();
+    //                    printer1.Print();
+    //                    break;
+    //            }
 
-//        }
-//    }
-//}
-//    class Vehicle
-//    {
-//        protected double distance = 0.0;
-//        protected double hour = 0.0;
-//        protected double fuel = 0.0;
+    //        }
+    //    }
+    //}
+    //    class Vehicle
+    //    {
+    //        protected double distance = 0.0;
+    //        protected double hour = 0.0;
+    //        protected double fuel = 0.0;
 
-//        public Vehicle(double distance, double hour, double fuel)
-//        {
-//            this.distance = distance;
-//            this.hour = hour;
-//            this.fuel = fuel;
-//        }
+    //        public Vehicle(double distance, double hour, double fuel)
+    //        {
+    //            this.distance = distance;
+    //            this.hour = hour;
+    //            this.fuel = fuel;
+    //        }
 
-//        public void Average()
-//        {
-//            double average = 0.0;
-//            average = distance / fuel;
-//            Console.WriteLine("Vehicle Average is {0:0.00}", average);
-//        }
+    //        public void Average()
+    //        {
+    //            double average = 0.0;
+    //            average = distance / fuel;
+    //            Console.WriteLine("Vehicle Average is {0:0.00}", average);
+    //        }
 
-//        public virtual void Speed()
-//        {
-//            double speed = 0.0;
-//            speed = distance / hour;
-//            Console.WriteLine("Vehicle Speed is {0:0.00}", speed);
-//        }
-//    }
+    //        public virtual void Speed()
+    //        {
+    //            double speed = 0.0;
+    //            speed = distance / hour;
+    //            Console.WriteLine("Vehicle Speed is {0:0.00}", speed);
+    //        }
+    //    }
 
-//    class Car : Vehicle
-//    {
-//        public Car(double distance, double hour, double fuel)
-//            : base(distance, hour, fuel)
-//        {
-//            //base.distance = 0;
-//            //base.hour = 0;
-//            //base.fuel = 0;
-//        }
-//        new public void Average()
-//        {
-//            double average = 0.0;
-//            average = distance / fuel;
-//            Console.WriteLine("Car Average is {0:0.00}", average);
-//        }
+    //    class Car : Vehicle
+    //    {
+    //        public Car(double distance, double hour, double fuel)
+    //            : base(distance, hour, fuel)
+    //        {
+    //            //base.distance = 0;
+    //            //base.hour = 0;
+    //            //base.fuel = 0;
+    //        }
+    //        new public void Average()
+    //        {
+    //            double average = 0.0;
+    //            average = distance / fuel;
+    //            Console.WriteLine("Car Average is {0:0.00}", average);
+    //        }
 
-//        public override void Speed()
-//        {
-//            double speed = 0.0;
-//            speed = distance / hour;
-//            Console.WriteLine("Car Speed is {0:0.00}", speed);
-//        }
-//    }
+    //        public override void Speed()
+    //        {
+    //            double speed = 0.0;
+    //            speed = distance / hour;
+    //            Console.WriteLine("Car Speed is {0:0.00}", speed);
+    //        }
+    //    }
 
-//    class ConstructorInheritence
-//    {
-//        static void Main(string[] args)
-//        {
-//            double distance, hour, fuel = 0.0;
-//            Console.WriteLine("Enter the Distance");
-//            distance = Double.Parse(Console.ReadLine());
-//            Console.WriteLine("Enter the Hours");
-//            hour = Double.Parse(Console.ReadLine());
-//            Console.WriteLine("Enter the Fuel");
-//            fuel = Double.Parse(Console.ReadLine());
-//            Car objCar = new Car(distance, hour, fuel);
-//            Vehicle objVeh = objCar;
-//            objCar.Average();
-//            objVeh.Average();
-//            objCar.Speed();
-//            objVeh.Speed();
-//            Console.Read();
-//        }
-//    }
-//}
-//internal class A
-//{
-//    public virtual void Test()
-//    {
-//        Console.WriteLine("A.Test");
-//    }
-//}
+    //    class ConstructorInheritence
+    //    {
+    //        static void Main(string[] args)
+    //        {
+    //            double distance, hour, fuel = 0.0;
+    //            Console.WriteLine("Enter the Distance");
+    //            distance = Double.Parse(Console.ReadLine());
+    //            Console.WriteLine("Enter the Hours");
+    //            hour = Double.Parse(Console.ReadLine());
+    //            Console.WriteLine("Enter the Fuel");
+    //            fuel = Double.Parse(Console.ReadLine());
+    //            Car objCar = new Car(distance, hour, fuel);
+    //            Vehicle objVeh = objCar;
+    //            objCar.Average();
+    //            objVeh.Average();
+    //            objCar.Speed();
+    //            objVeh.Speed();
+    //            Console.Read();
+    //        }
+    //    }
+    //}
+    //internal class A
+    //{
+    //    public virtual void Test()
+    //    {
+    //        Console.WriteLine("A.Test");
+    //    }
+    //}
 
-//internal class B : A
-//{
-//    public override void Test()
-//    {
-//        Console.WriteLine("B.Test");
-//    }
-//}
+    //internal class B : A
+    //{
+    //    public override void Test()
+    //    {
+    //        Console.WriteLine("B.Test");
+    //    }
+    //}
 
-//internal class Program
-//{
-//    private static void Main()
-//    {
-//        // Compile-time type is A.
-//        // Runtime type is A as well.
-//        A ref1 = new A();
-//        ref1.Test();
+    //internal class Program
+    //{
+    //    private static void Main()
+    //    {
+    //        // Compile-time type is A.
+    //        // Runtime type is A as well.
+    //        A ref1 = new A();
+    //        ref1.Test();
 
-//        // Compile-time type is A.
-//        // Runtime type is B.
-//        A ref2 = new B();
-//        ref2.Test();
-//        //}
-//    }
-//}
+    //        // Compile-time type is A.
+    //        // Runtime type is B.
+    //        A ref2 = new B();
+    //        ref2.Test();
+    //        //}
+    //    }
+    //}
 
-//class Mybase
-//{
-//    public virtual void dimension()
-//    //		public  void dimension()
-//    {
-//        Console.WriteLine("This is the Dimension method");
+    //class Mybase
+    //{
+    //    public virtual void dimension()
+    //    //		public  void dimension()
+    //    {
+    //        Console.WriteLine("This is the Dimension method");
 
-//    }
+    //    }
 
-//}
-//class MyDerived : Mybase
-//{
-//    public override void dimension()
-//    {
-//        int h = 0;
-//        h++;
-//    }
-//    public static void Main()
-//    {
+    //}
+    //class MyDerived : Mybase
+    //{
+    //    public override void dimension()
+    //    {
+    //        int h = 0;
+    //        h++;
+    //    }
+    //    public static void Main()
+    //    {
 
-//        Mybase my = new MyDerived();
-//        int height;
-//        height = 10;
-//        my.dimension();
-//        Console.WriteLine("Dimension is {0}", height);
-//    }
-//}
+    //        Mybase my = new MyDerived();
+    //        int height;
+    //        height = 10;
+    //        my.dimension();
+    //        Console.WriteLine("Dimension is {0}", height);
+    //    }
+    //}
 
-//}
+    //}
+}
