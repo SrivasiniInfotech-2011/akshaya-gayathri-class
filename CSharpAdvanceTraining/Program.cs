@@ -1,4 +1,4 @@
-﻿using CharpAdvance.Models;
+﻿// using CharpAdvance.Models;
 namespace CSharpAdvanceTraining;
 internal class Program
 {
@@ -14,14 +14,12 @@ internal class Program
 
         //Console.Write(customer.ToString());
 
-        bool? isValid = true;
         byte age = 25;
         int number = 1000;
-        long bigNumber = 10000000000l;
+        long bigNumber = 10000000000L;
         float pi = 3.14f;
         double eulerNumber = 2.718281828459045d;
-        decimal price = 19.99m;
-        char initial = 'A';
+
         string greeting = "Hello, World!";
         DateTime today = DateTime.Now;
         DateTimeOffset offsetDate = DateTimeOffset.Now;
@@ -45,7 +43,8 @@ internal class Program
         number=(int)bigNumber; // long to int (will cause overflow if bigNumber > int.MaxValue)
         age = (byte)number; // int to byte (will cause overflow if number > 255)
         pi = (float)eulerNumber; // double to float (will cause loss of precision)
-        initial = (char)65; // ASCII value to char (65 is 'A')
+        char initial = (char)65; // ASCII value to char (65 is 'A')
+        Console.WriteLine($"Initial character: {initial}");
 
         var convertable =int.TryParse(greeting, out number); // string to int (will return 0 if parsing fails)
         if(convertable)

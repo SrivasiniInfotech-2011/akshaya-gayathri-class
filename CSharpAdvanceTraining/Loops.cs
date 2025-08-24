@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CSharpAdvanceTraining
 {
-   public class test
+   public class Test
     {
-        public void Test()
+        public void TestMethod()
         {
             Console.WriteLine("I am from test");
         }
@@ -26,7 +26,7 @@ namespace CSharpAdvanceTraining
             }
 
             Console.Write("Enter the number till which you want to get the even numbers:");
-            int a = int.Parse(Console.ReadLine());
+            int a = int.Parse(Console.ReadLine() ?? "0");
              i = 0;
             while (i <= a)
             {
@@ -122,7 +122,7 @@ namespace CSharpAdvanceTraining
             objArray.AddRange(new ArrayList() { "Akshaya", "Vanita" });
             objArray.Add("string");
             objArray.Add('c');
-            objArray.Add(new test());
+            objArray.Add(new Test());
             ArrayList objArrayData = (ArrayList)objArray.Clone();
             objArray.Insert(1, new ArrayList() { "Harshni", "Sample" });
             bool existsone = objArray.Contains("string");
@@ -146,10 +146,10 @@ namespace CSharpAdvanceTraining
                         Console.WriteLine(ar);
                     }
                 }
-                else if (item.GetType() == typeof(test))
+                else if (item.GetType() == typeof(Test))
                 {
-                    test o1 = (test)item;
-                    o1.Test();
+                    Test o1 = (Test)item;
+                    o1.TestMethod();
                 }
             }
         }

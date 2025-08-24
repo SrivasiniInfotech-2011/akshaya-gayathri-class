@@ -76,11 +76,11 @@ namespace Mynamespace
             //		private PI(){}	//Private Constructor
             PI() { }
         }
-        public class three
+        public class Three
         {
             public static int value = 3;
-            //		private three(){}	//Private Constructor
-            three() { }
+            //		private Three(){}	//Private Constructor
+            public Three() { }
         }
     }
     namespace MyMath
@@ -122,7 +122,7 @@ namespace Mynamespace
             Console.WriteLine("Subtract Result is {0}", Result);
 
             Console.WriteLine("\n The Value of PI is {0}", Consts.PI.value);
-            Console.WriteLine("\n The Value of three is {0}", Consts.three.value);
+            Console.WriteLine("\n The Value of three is {0}", Consts.Three.value);
             HelloWorld obj = new HelloWorld();
             Testing.HelloWorld.TestMessage();
         }
