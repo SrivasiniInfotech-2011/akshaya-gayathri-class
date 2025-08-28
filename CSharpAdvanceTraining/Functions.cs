@@ -103,7 +103,6 @@ namespace CSharpAdvanceTraining
             Increment(ref var1);
             Console.WriteLine("After fn call the value of var3 is {0}  ", var1);
             int a;
-            string x;
             int b = objFunctions.Add(10, 20, out a);
 
             Console.WriteLine("The Value of result is {0}", b);
