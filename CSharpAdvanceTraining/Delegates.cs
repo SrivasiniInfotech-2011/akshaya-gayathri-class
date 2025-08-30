@@ -12,7 +12,7 @@ namespace CSharpTraining
     //    public static void Main(string[] args)
     //    {
     //        ComparerDelegate delObj = new ComparerDelegate(CompareInt);
-    //        int a=10, b = 20;
+    //        int a = 10, b = 20;
     //        string equality = delObj(a, b) ? "are Equal" : "are not Equal";
     //        Console.Write("The numbers {0} and {1} {2}", a, b, equality);
     //    }
@@ -22,7 +22,7 @@ namespace CSharpTraining
     //public class Delegates
     //{
     //    delegate int NumberChanger(int n);
-    //    delegate bool Comparer(int a, int b);
+    //    delegate bool IntegerComparer(int a, int b);
 
     //    public static bool CompareInt(int x, int y)
     //    {
@@ -57,7 +57,7 @@ namespace CSharpTraining
     //        int b = int.Parse(Console.ReadLine());
 
     //        //Comparer comp = new Comparer(CompareInt);
-    //        Comparer comp = new Comparer(CompareInt);
+    //        IntegerComparer comp = new IntegerComparer(CompareInt);
     //        Console.WriteLine(comp(a, b));
 
     //        //Console.Write("Enter the Value:");

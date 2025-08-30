@@ -10,7 +10,9 @@ namespace CSharpTraining
     {
         private int value;
         public delegate void NumChangeHandler();
+        public delegate string OnSaveHandler(string s);
         public event NumChangeHandler NumberChanged;
+        public event OnSaveHandler OnSave;
 
         public EventHandling(int n)
         {
@@ -29,17 +31,28 @@ namespace CSharpTraining
             Console.WriteLine("Handled via Delegate");
         }
 
+        public static string Saved(string s)
+        {
+            return s ;
+        }
+
         public void SetValue(int n)
         {
             if (value != n)
             {
                 value = n;
                 OnNumChanged();
+                if (OnSave != null)
+                {
+                    string result = OnSave("Saved Successfully");
+                    Console.WriteLine(result);
+                }
             }
         }
         static void Main(string[] args)
         {
             var obj = new EventHandling(10);
+            obj.OnSave += new OnSaveHandler(Saved);
             obj.NumberChanged += new NumChangeHandler(NumberHandler);
             obj.SetValue(20);
             obj.NumberChanged -= new NumChangeHandler(NumberHandler);

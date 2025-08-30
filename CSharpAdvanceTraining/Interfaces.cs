@@ -368,50 +368,50 @@ namespace CSharp
     //     }
     // }
     //        //Deriving New Interface from Existing Intreface
-//     public interface IShape
-//     {
-//         long Area();
-//         long Circumference();
-//         int Sides { get; set; }
-//     }
+    //     public interface IShape
+    //     {
+    //         long Area();
+    //         long Circumference();
+    //         int Sides { get; set; }
+    //     }
 
-//     internal interface I3DShape : IShape
-//     {
-//         int Depth { get; set; }
-//     }
+    //     internal interface I3DShape : IShape
+    //     {
+    //         int Depth { get; set; }
+    //     }
 
-//     public class Test : I3DShape
-//     {
-//         public int Depth
-//         {
-//             get { throw new NotImplementedException(); }
-//             set { throw new NotImplementedException(); }
-//         }
+    //     public class Test : I3DShape
+    //     {
+    //         public int Depth
+    //         {
+    //             get { throw new NotImplementedException(); }
+    //             set { throw new NotImplementedException(); }
+    //         }
 
-//         public int Sides
-//         {
-//             get { throw new NotImplementedException(); }
-//             set { throw new NotImplementedException(); }
-//         }
+    //         public int Sides
+    //         {
+    //             get { throw new NotImplementedException(); }
+    //             set { throw new NotImplementedException(); }
+    //         }
 
-//         public long Area()
-//         {
-//             throw new NotImplementedException();
-//         }
+    //         public long Area()
+    //         {
+    //             throw new NotImplementedException();
+    //         }
 
-//         public long Circumference()
-//         {
-//             throw new NotImplementedException();
-//         }
-//     }
+    //         public long Circumference()
+    //         {
+    //             throw new NotImplementedException();
+    //         }
+    //     }
 
-//     public class Hide
-//     {
-//         public static void Main()
-//         {
-//             Test b = new Test();
-//             //I3DShape a = new I3DShape();
-//             b.Area(); // first implement in some other class and then use it.
-//         }
-//     }
-// }
+    //     public class Hide
+    //     {
+    //         public static void Main()
+    //         {
+    //             Test b = new Test();
+    //             //I3DShape a = new I3DShape();
+    //             b.Area(); // first implement in some other class and then use it.
+    //         }
+    //     }
+}
